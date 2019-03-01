@@ -1,0 +1,169 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.searchForm-inputContainer {
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.searchForm-input {
+  width: 500px;
+  border: none;
+  border-radius: 3px;
+  padding: 14px 20px;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+
+.top-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  transform: translate(0, 0);
+  border-bottom: 1px solid #eee;
+  background-color: #FAFAFA;
+  padding: 5px 0;
+}
+
+.top-container .searchForm-input {
+  padding: 10px;
+}
+
+.top-container .searchForm-inlineSubmit {
+display: inline;
+}
+
+.top-container .searchForm-button {
+  display: none;
+}
+
+.top-container .github-corner {
+  display: block;
+}
+
+.resultsContainer {
+  width: 100%;
+  max-width: 630px;
+  margin-left: 100px;
+  padding: 30px 20px;
+}
+
+.resultItem {
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+
+.resultItem-title {
+  color: #1a0dab;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.resultItem-title a {
+  text-decoration: none;
+}
+
+.resultItem-title a:hover {
+  text-decoration: underline;
+}
+
+.resultItem-link {
+  color: #006621;
+}
+
+.resultItem-snippet {
+  color: #545454;
+  line-height: 18px;
+}
+
+.resultItem-snippet .searchmatch {
+  font-weight: 700;
+}
+
+.moreResults {
+  margin-left: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 630px;
+  padding-left: 20px;
+}
+
+.moreResults p {
+  font-size: 1.8rem;
+}
+
+.moreResults-button {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+  background-color: #eee;
+  color: #555;
+  font-weight: 600;
+  padding: 15px 0;
+  font-size: 1.6rem;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.666;
+  background-color: #fff;
+  z-index: 2;
+}
+
+@media screen and (max-width: 550px) {
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .top-container {
+    width: 100%;
+  }
+
+  .top-container .github-corner {
+    display: none;
+  }
+
+  .resultsContainer, .moreResults {
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-left: 0;
+  }
+
+  .moreResults {
+    width: 90%;
+  }
+
+  .searchForm-input {
+    width: 100%;
+    max-width: 150px;
+  }
+}
